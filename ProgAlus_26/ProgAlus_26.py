@@ -35,7 +35,7 @@ b = float(input("Teine arv: "))
 print(a,"+",b,"=", a + b)
 
 print("Lahutamine: ")
-a = 7float(input("Esimene arv: "))
+a = float(input("Esimene arv: "))
 b = float(input("Teine arv: "))
 print(a,"-",b,"=", a - b)
 

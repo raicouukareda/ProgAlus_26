@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>cacaaef4-ebb0-49bf-ae62-11284020b1a9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>ProgAlus_26.py</StartupFile>
+    <StartupFile>Praktiline_too.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Praktiline_too.py" />
     <Compile Include="ProgAlus_26.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
