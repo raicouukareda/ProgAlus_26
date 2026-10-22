@@ -17,7 +17,7 @@ P=2*(b+c) #korrutamis märk *
 print("Ristküliku ümbermõõt", P)
 di=sqrt(b*2+c*2) #math polnud vaja
 print("Ristküliku diagonaal", round(di)) #puudus sulg )
-print()
+#print() <- see print ei pea olema
 print("Ringi karakteristikud")
 r=float(input('Sisesta ringi raadiusi pikkus => ')) #kaks ' märki, peaks olema kas üks ' mark või " , pidi olema ka float
 d=2*r #puudus * märk
