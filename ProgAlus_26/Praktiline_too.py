@@ -19,7 +19,7 @@ di=sqrt(b*2+c*2)
 print("Ristküliku diagonaal", round(di)) #puudus sulg )
 print()
 print("Ringi karakteristikud")
-r=float(input('Sisesta ringi raadiusi pikkus => ')) #kaks ' märki, peaks olema kas üks ' mark või "
+r=float(input('Sisesta ringi raadiusi pikkus => ')) #kaks ' märki, peaks olema kas üks ' mark või " , pidi olema ka float
 d=2*r #puudus * märk
 print("Ringi läbimõõt", d) #puudus koma
 S=pi*r*2
