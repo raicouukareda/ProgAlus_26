@@ -99,3 +99,4 @@ print('  ^^ "" ^^ ')
 from math import randint
 
 inimesi = randint(3, 5)
+
