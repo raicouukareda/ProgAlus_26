@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>cacaaef4-ebb0-49bf-ae62-11284020b1a9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Teema2.py</StartupFile>
+    <StartupFile>Too2_1.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,6 +26,7 @@
     <Compile Include="Teema2.py" />
     <Compile Include="Too1_1.py" />
     <Compile Include="Too1_3.py" />
+    <Compile Include="Too2_1.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
