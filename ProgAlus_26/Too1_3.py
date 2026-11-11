@@ -53,3 +53,8 @@ mundi_raadius = mundi_dia/2 #cm
 maa_ümber = 2*pi*maa_raadius*1000 #cm
 mundi_arv = maa_ümber/mundi_dia
 print(f"2-euroseid münte on vaja: {mundi_arv:.0f}")
+
+y=10
+x=3
+v=x % y
+print(v)

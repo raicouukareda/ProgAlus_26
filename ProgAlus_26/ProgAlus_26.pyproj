@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>cacaaef4-ebb0-49bf-ae62-11284020b1a9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Too1_3.py</StartupFile>
+    <StartupFile>Teema2.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,7 @@
   <ItemGroup>
     <Compile Include="Praktiline_too.py" />
     <Compile Include="ProgAlus_26.py" />
+    <Compile Include="Teema2.py" />
     <Compile Include="Too1_1.py" />
     <Compile Include="Too1_3.py" />
   </ItemGroup>
