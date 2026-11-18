@@ -84,3 +84,91 @@
 #         print("Toatemperatuur on 18 kraadi või madalam")
 # except ValueError:
 #     print("kraadid peaks olema numbrites")
+
+# Ülesanne 6
+
+# try:
+#     pikkus = float(input("sisesta humanoid pikkus (cm): "))
+#     if  30 <= pikkus < 160:
+#         print("inimene on lühike")
+#     elif 160 <= pikkus <= 180:
+#         print("inimene on keskmine pikkusega")
+#     elif 180 < pikkus <= 220:
+#         print("inimene on pikk")
+#     else:
+#         print("pikkus pole sobilik")
+# except ValueError:
+#     print("palun sisesta pikkus numbrina")
+
+# # Ülesanne 7 (ül. 6 aga nüüd küsib ka sugu)
+
+# sugu = input("sugu: ")
+# if sugu.isalpha():
+#     if sugu.lower()=="m" or sugu.upper()=="MEES":
+#         print("mehe pikkuse analüüs")
+#         try:
+#             pikkus = float(input("sisesta humanoid pikkus (cm): "))
+#             if  30 <= pikkus < 160:
+#                 print("inimene on lühike")
+#             elif 160 <= pikkus <= 180:
+#                 print("inimene on keskmine pikkusega")
+#             elif 180 < pikkus <= 220:
+#                 print("inimene on pikk")
+#             else:
+#                 print("pikkus pole sobilik")
+#         except ValueError:
+#             print("tähtedega pole võimalik, number vaja")
+#     else:
+#         print("naise pikkuse analüüs")
+#         try:
+#             pikkus = float(input("sisesta humanoid pikkus (cm): "))
+#             if  30 <= pikkus < 150:
+#                 print("inimene on lühike")
+#             elif 150 <= pikkus <= 170:
+#                 print("inimene on keskmine pikkusega")
+#             elif 170 < pikkus <= 210:
+#                 print("inimene on pikk")
+#             else:
+#                 print("pikkus pole sobilik")
+#         except ValueError:
+#             print("tähtedega pole võimalik, number vaja")
+# else:
+#     print("täht paluks")
+
+# Ülesanne 8
+
+from random import *
+summa = 0
+arve = "Toode   Kogus   Hind    Kokku\n"
+valik = input("kas soovid osta piima? (jah/ei): ")
+if valik.lower()=="jah":
+    kogus = input("mitu piima tahaksid võtta? (int): ")
+    if kogus.isdigit():
+        kogus = int(kogus)
+        p_hind = round(uniform(0.5, 3.6),2)
+        print(f"piima hind on {p_hind}€")
+        summa += round(kogus*p_hind,2)
+        print(f"piima kogusumm on {summa}€")
+        arve+=f"piim    {kogus}       {p_hind}€   {round(kogus*p_hind,2)}€\n"
+    else:
+        print("midagi läks valesti")
+else:
+    print("ok siis piima ei osta")
+
+valik = input("kas soovid osta leiba? (jah/ei): ")
+if valik.lower()=="jah":
+    kogus = input("mitu leiba tahaksid võtta? (int): ")
+    if kogus.isdigit():
+        kogus = int(kogus)
+        l_hind = round(uniform(1.5, 3.5),2)
+        print(f"leiva hind on {l_hind}€")
+        summa += round(kogus*l_hind,2)
+        print(f"leiva kogusumm on {summa}€")
+        arve+=f"leib    {kogus}       {l_hind}€   {round(kogus*l_hind,2)}€\n"
+    else:
+        print("midagi läks valesti")
+else:
+    print("ok siis leiba ei osta")
+
+print("Arve nr. 123456789")
+print(arve)
