@@ -135,40 +135,82 @@
 # else:
 #     print("täht paluks")
 
-# Ülesanne 8
+# # Ülesanne 8
 
-from random import *
-summa = 0
-arve = "Toode   Kogus   Hind    Kokku\n"
-valik = input("kas soovid osta piima? (jah/ei): ")
-if valik.lower()=="jah":
-    kogus = input("mitu piima tahaksid võtta? (int): ")
-    if kogus.isdigit():
-        kogus = int(kogus)
-        p_hind = round(uniform(0.5, 3.6),2)
-        print(f"piima hind on {p_hind}€")
-        summa += round(kogus*p_hind,2)
-        print(f"piima kogusumm on {summa}€")
-        arve+=f"piim    {kogus}       {p_hind}€   {round(kogus*p_hind,2)}€\n"
-    else:
-        print("midagi läks valesti")
-else:
-    print("ok siis piima ei osta")
+# from random import *
+# summa = 0
+# arve = "Toode   Kogus   Hind    Kokku\n"
+# valik = input("kas soovid osta piima? (jah/ei): ")
+# if valik.lower()=="jah":
+#     kogus = input("mitu piima tahaksid võtta? (int): ")
+#     if kogus.isdigit():
+#         kogus = int(kogus)
+#         p_hind = round(uniform(0.5, 3.6),2)
+#         print(f"piima hind on {p_hind}€")
+#         summa += round(kogus*p_hind,2)
+#         print(f"piima kogusumm on {summa}€")
+#         arve+=f"piim    {kogus}       {p_hind}€   {round(kogus*p_hind,2)}€\n"
+#     else:
+#         print("midagi läks valesti")
+# else:
+#     print("ok siis piima ei osta")
 
-valik = input("kas soovid osta leiba? (jah/ei): ")
-if valik.lower()=="jah":
-    kogus = input("mitu leiba tahaksid võtta? (int): ")
-    if kogus.isdigit():
-        kogus = int(kogus)
-        l_hind = round(uniform(1.5, 3.5),2)
-        print(f"leiva hind on {l_hind}€")
-        summa += round(kogus*l_hind,2)
-        print(f"leiva kogusumm on {summa}€")
-        arve+=f"leib    {kogus}       {l_hind}€   {round(kogus*l_hind,2)}€\n"
-    else:
-        print("midagi läks valesti")
-else:
-    print("ok siis leiba ei osta")
+# valik = input("kas soovid osta leiba? (jah/ei): ")
+# if valik.lower()=="jah":
+#     kogus = input("mitu leiba tahaksid võtta? (int): ")
+#     if kogus.isdigit():
+#         kogus = int(kogus)
+#         l_hind = round(uniform(1.5, 3.5),2)
+#         print(f"leiva hind on {l_hind}€")
+#         summa += round(kogus*l_hind,2)
+#         print(f"leiva kogusumm on {summa}€")
+#         arve+=f"leib    {kogus}       {l_hind}€   {round(kogus*l_hind,2)}€\n"
+#     else:
+#         print("midagi läks valesti")
+# else:
+#     print("ok siis leiba ei osta")
 
-print("Arve nr. 123456789")
-print(arve)
+# print("Arve nr. 123456789")
+# print(arve)
+
+# # Ülesanne 9
+
+# try:
+#     print("nelinurga kontroll yo")
+#     k1 = float(input("esimese külje pikkus: "))
+#     k2 = float(input("teise külje pikkus: "))
+#     k3 = float(input("kolmanda külje pikkus: "))
+#     k4 = float(input("nelja külje pikkus: "))
+#     if k1>0 and k2>0 and k3>0 and k4>0:
+#         if k1==k2==k3==k4:
+#             print("ruudu küljed")
+#         else:
+#             print("nelinurga küljed")
+#     else:
+#         print("pane positiivsed numbrid")
+# except ValueError:
+#     print("pikkus peaks olema numbrites")
+
+# # Ülesanne 10
+
+# tehed = ["+","-","*","/"]
+# try:
+#     arv1 = float(input("sisesta esimene arv: "))
+#     arv2 = float(input("sisesta teine arv: "))
+#     tehe = input("mis tehe?(+,-,*,/) ")
+#     if tehe in tehed:
+#         if tehe == "+":
+#             print(f"{arv1} {tehe} {arv2} = {arv1+arv2}")
+#         elif tehe == "-":
+#             print(f"{arv1} {tehe} {arv2} = {arv1-arv2}")
+#         elif tehe == "/":
+#             if arv2 == 0:
+#                 print("DIV/0")
+#             else:
+#                 print(f"{arv1} {tehe} {arv2} = {arv1/arv2}")
+#         elif tehe == "*":
+#             print(f"{arv1} {tehe} {arv2} = {arv1*arv2}")
+#     else:
+#         print("seda tehte ei saa teha")
+# except ValueError:
+#     print("pane arvud, numbrid")
